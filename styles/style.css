@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Clear Sans";
+  src: url(../fonts/ClearSans-Regular.ttf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #121213;
+    font-family: "Clear Sans", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header { 
+    height: 7vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(58, 58, 60);
+    color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 86vh;
+    width: 100%;
+}
+
+.footer {
+    height: 7vh;
+    width: 100%;
+}
+
+.window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 67vh;
+    width: 30%;
+    background-color: #1a1a1b;
+    color: white;
+    box-shadow: 0 4px 23px 0 rgb(0 0 0 / 20%);
+}
+
+.window__main {
+    padding: 10%;
+}
+
+.btn-close {
+    background-color: #1a1a1b;
+    font-size: 20px;
+    border: 1px solid rgb(38, 0, 255);
+    padding-top: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+}
+
+.icon {
+    color: white;
+}
+
+.exmaple__grid {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.exmple__grid_el {
+    border: 2px solid #343434;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct_letter {
+    background-color: #b59f3b;
+}
+
+.correct_spot {
+    background-color: #538d4e;
+}
+
+.window__hide {
+    opacity: 0 !important;
+    transition: all 0.3s ease;
+}
+
+.window__clear {
+    display: none;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.col {
+    border: 2px solid #343434;
+    height: 63px;
+    width: 63px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-inside {
+    border:none; 
+    background: transparent; 
+    outline: 0;
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}

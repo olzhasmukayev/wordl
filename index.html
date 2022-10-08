@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/566701606d.js" crossorigin="anonymous"></script>
+    <script defer src="./scripts/game.js"></script>
+    <script src="./scripts/axios.min.js"></script>
+    <title>Wordl</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">WORDL</h1>
+        </div>
+        <div class="main">
+            <div class="grid">
+                <div class="row">
+                    <div class="col"><input class="col-inside" type="text" maxlength="1"/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1"/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1"/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1"/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1"/></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                    <div class="col"><input class="col-inside" type="text" maxlength="1" disabled/></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+        <div class="window">
+            <div class="window__main">
+                <div class="window__contenet">
+                    <h1>How to Play</h1>
+                    <h3>Guess the word in N times</h3>
+                    <ul>
+                        <li>Each guess must be valud N-letter word.</li>
+                        <li>The color of the tiles will change to show how close your guess was.</li>
+                    </ul>
+                    <h3>Examples:</h3>
+                    <div class="window__examples">
+                        <h4>W is in the word and in correct spot.</h4>
+                        <div class="exmaple__grid">
+                            <div class="exmple__grid_el correct_spot">W</div>
+                            <div class="exmple__grid_el">E</div>
+                            <div class="exmple__grid_el">A</div>
+                            <div class="exmple__grid_el">R</div>
+                            <div class="exmple__grid_el">Y</div>
+                        </div>
+                        <h4>I is in the word but in the wront spot.</h4>
+                        <div class="exmaple__grid">
+                            <div class="exmple__grid_el">P</div>
+                            <div class="exmple__grid_el correct_letter">I</div>
+                            <div class="exmple__grid_el">L</div>
+                            <div class="exmple__grid_el">L</div>
+                            <div class="exmple__grid_el">S</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-close" onclick="closeModalWindow()"><i class="fa-solid fa-xmark icon"></i></button>
+        </div>
+    </div>
+</body>
+</html>
